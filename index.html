@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<header>
+
+  <h2 id="titulo">Calculadora Web</h2>
+  
+</header>
+
+<body>
+
+  <input type="text" id="display" disabled>
+
+  <div id="botoes">
+    <div>
+      <button class="botao" onclick="acrescentarNumero('7')">7</button>
+      <button class="botao" onclick="acrescentarNumero('8')">8</button>
+      <button class="botao" onclick="acrescentarNumero('9')">9</button>
+      <button id="divisao" class="botao botao-operador" onclick="manejarOperador(this)">÷</button>
+      <button class="botao botao-especial" onclick="limparValor()">C</button>
+    </div>
+  
+    <div>
+      <button class="botao" onclick="acrescentarNumero('4')">4</button>
+      <button class="botao" onclick="acrescentarNumero('5')">5</button>
+      <button class="botao" onclick="acrescentarNumero('6')">6</button>
+      <button id="vezes" class="botao botao-operador" onclick="manejarOperador(this)">×</button>
+      <button id="temperatura" class="botao botao-especial" onclick="alternarModoTemperatura()">°C</button>
+    </div>
+
+    <div>
+      <button class="botao" onclick="acrescentarNumero('1')">1</button>
+      <button class="botao" onclick="acrescentarNumero('2')">2</button>
+      <button class="botao" onclick="acrescentarNumero('3')">3</button>
+      <button id="menos" class="botao botao-operador" onclick="manejarOperador(this)">-</button>
+      <button id="moeda" class="botao botao-especial" onclick="alternarModoMoeda()">$</button>
+    </div>
+
+    <div>
+      <button class="botao" onclick="acrescentarNumero('0')">0</button>
+      <button class="botao" onclick="acrescentarDecimal('.')">.</button>
+      <button class="botao botao-operador botao-visivel" onclick="calcularValor()">=</button>
+      <button id="mais" class="botao botao-operador" onclick="manejarOperador(this)">+</button>
+    </div>
+
+    <div>
+      <button class="botao botao-visivel" onclick="acrescentarParenteses(this)">(</button>
+      <button class="botao botao-visivel" onclick="acrescentarParenteses(this)">)</button>
+    </div>
+  </div>
+
+  <h2 id="tutorial-titulo"></h2>
+  <p id="tutorial"></p>
+
+  <h2 id="historia-titulo">Histórico</h2>
+  <div id="historia"></div>
+
+  <script src="/js/script.js"></script>
+  <noscript>Seu navegador tem scripts desativados ou não suporta Javascript</noscript>
+
+</body>
+
+<footer>
+
+  <div id="texto-footer">
+    <p id="contexto">Esta calculadora web é um projeto pessoal com o intuito de ter o meu primeiro contato com o JavaScript, preparando me para o próximo semestre de meu curso técnico de desenvolvimento.</p>
+
+    <p id="copyright">Copyright © 2024 Daniel Medrado <br>All Rights Reserved</p>
+  </div>
+
+  <img id="calculadora-icone" src="img/calculator.png">
+
+  <div id="contatos">
+    <div>
+      <a id="email" href="mailto:d_medrado@yahoo.com">d_medrado@yahoo.com</a>
+
+    <div id="contato-icone">
+      <a href="https://github.com/ren-angel" target=”_blank”>
+        <img src="img/github.png" width="32" height="32" alt="GitHub">
+      </a>
+
+      <a href="https://www.linkedin.com/in/daniel-medrado-de-morais-79073b299/" target=”_blank”>
+        <img src="img/linkedin.png" width="32" height="32" alt="LinkedIn">
+      </a>
+
+      <a id="email-icone" href="mailto:d_medrado@yahoo.com" target=”_blank”>
+        <img src="img/email.png" width="32" height="32" alt="E-mail">
+      </a>
+    </div>
+  </div>
+  
+</footer>
+</html>

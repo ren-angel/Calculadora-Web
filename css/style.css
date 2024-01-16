@@ -1,0 +1,242 @@
+header {
+    height: 70px;
+    background-color: #003366;
+    color: white;
+    margin-left: -453px;
+    margin-right: -453px;
+    margin-bottom: 35px;
+}
+
+header h2 {
+    margin-left: 207px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1DDE9;
+}
+
+#display {
+    height: 40px;
+    width: 590px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: right;
+    color: white;
+    background-color: #336699;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#botoes {
+    margin-left: 80px;
+}
+
+.botao {
+    height: 60px;
+    width: 90px;
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+    background-color: #E5ECF3;
+    border-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #d1d6dc;
+    transition: background-color 0.5s ease;
+}
+
+.botao-operador {
+    background-color: #AEC0D3;
+}
+
+.botao-operador:hover {
+    background-color: #cad6e2;
+    transition: background-color 0.5s ease;
+}
+
+.botao-especial {
+    background-color: #6a88a8;
+}
+
+.botao-especial:hover {
+    background-color: #90a7c0;
+    transition: background-color 0.5s ease;
+}
+
+.botao-visivel {
+    transition: opacity 0.1s ease;
+}
+
+.sumido {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#tutorial {
+    width: 543px;
+    font-size: 1.5rem;
+    margin-left: 47px;
+}
+
+#historia-titulo {
+    margin-left: 259px;
+}
+
+#historia button {
+    height: 50px;
+    width: 75px;
+    margin-left: 40px;
+    font-size: 1rem;
+    background-color: #E5ECF3;
+    border-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75px;
+}
+
+#historia button:hover {
+    background-color: #d1d6dc;
+    transition: background-color 0.5s ease;
+}
+
+footer {
+    height: 158px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #003366;
+    margin-left: -453px;
+    margin-right: -453px;
+    margin-top: 35px;
+}
+
+#texto-footer {
+    width: 400px;
+    margin-left: 30px;
+}
+
+#contatos {
+    width: 400px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#email {
+    color: white;
+}
+
+#contato-icone {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#email-icone {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 492px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header h2 {
+        margin-left: 159px;
+    }
+    
+    #display {
+        width: 310px;
+        margin-left: 79px;
+        margin-bottom: 30px;
+    }
+    
+    #botoes {
+        margin-left: 69px;
+    }
+    
+    .botao {
+        height: 45px;
+        width: 70px;
+    }
+    
+    #tutorial {
+        width: 300px;
+        font-size: 1.3rem;
+        margin-left: 105px;
+    }
+    
+    #historia-titulo {
+        margin-left: 198px;
+    }
+    
+    #historia button {
+        height: 45px;
+        width: 70px;
+        margin-left: 71px;
+        margin-bottom: 20px;
+        max-width: 70px;
+    }
+
+    #historia :nth-last-child(2) {
+        margin-left: 142px;
+    }
+    
+    footer {
+        height: 300px;
+        width: 492px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 35px;
+    }
+
+    #calculadora-icone {
+        display: none;
+    }
+    
+    #contexto {
+        width: 330px;
+        margin-left: 50px;
+        margin-bottom: 135px;
+    }
+
+    #copyright {
+        width: 400px;
+        margin-left: 50px;
+    }
+
+    #email {
+        display: none;
+    }
+
+    #contato-icone {
+        position: absolute;
+        margin-top: -15px;
+        right: 7%;
+        gap: 100px;
+    }
+
+    #contato-icone img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #email-icone {
+        display: block;
+    }
+}
